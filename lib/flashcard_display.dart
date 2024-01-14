@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
-import 'flashcard_model.dart'; 
+import 'flashcard_model.dart';
+import 'package:flutter_tex/flutter_tex.dart';
 
 class FlashcardDisplay extends StatefulWidget {
   final List<Flashcard> flashcards;
@@ -35,7 +36,7 @@ class _FlashcardDisplayState extends State<FlashcardDisplay> {
             alignment: Alignment.topRight,
             children: [
               SizedBox(
-                height: 400.0, 
+                height: 400.0,
                 child: Center(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -54,7 +55,6 @@ class _FlashcardDisplayState extends State<FlashcardDisplay> {
                 onPressed: () {
                   deleteFlashcard(widget.flashcards[currentIndex].id);
                   setState(() {
-
                     widget.flashcards.removeAt(currentIndex);
 
                     currentIndex =
@@ -93,18 +93,31 @@ class _FlashcardDisplayState extends State<FlashcardDisplay> {
     );
   }
 
-  Widget _buildFlashcardSide(String text) {
-    return Card(
-      elevation: 4.0,
-      child: Container(
-        padding: EdgeInsets.all(8.0),
-        child: Center(
-          child: Text(
-            text,
-            style: TextStyle(fontSize: 16.0),
+Widget _buildFlashcardSide(String latexEquation) {
+  return Card(
+    elevation: 4.0,
+    child: Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          TeXView(
+            renderingEngine: TeXViewRenderingEngine.katex(),
+            child: TeXViewDocument(latexEquation),
           ),
-        ),
+          SizedBox(height: 8.0),
+          Text(
+            'Tap!!',
+            style: TextStyle(
+              fontSize: 16.0,
+              color: Colors.purple[800],
+            ),
+          ),
+        ],
       ),
-    );
-  }
+    ),
+  );
+}
+
 }

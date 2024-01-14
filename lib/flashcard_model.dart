@@ -38,7 +38,7 @@ final List<Flashcard> defaultMathsFlashcards = [
   Flashcard(id: 1, question: 'What is the square root of 144?', answer: '12', chapter: 'Maths'),
   Flashcard(id: 2, question: 'Solve the equation: \(2x + 5 = 15\)', answer: 'x = 5', chapter: 'Maths'),
   Flashcard(id: 3, question: 'Find the area of a rectangle with length 8 units and width 5 units.', answer: '40 square units', chapter: 'Maths'),
-  Flashcard(id: 4, question: 'What is the value of \(\\pi\) (pi) to two decimal places?', answer: '3.14', chapter: 'Maths'),
+  Flashcard(id: 4, question: 'What is the value of \π (pi) to two decimal places?', answer: '3.14', chapter: 'Maths'),
   Flashcard(id: 5, question: 'If a triangle has angles A, B, and C, and angle A is 90 degrees, what type of triangle is it?', answer: 'Right-angled triangle', chapter: 'Maths'),
 ];
 
