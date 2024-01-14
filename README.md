@@ -38,12 +38,13 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the [online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on mobile development, and a full API reference.
 
 # Sample images
-- (https://github.com/KKSurendran06/FLashPro/assets/137263515/3f9d0dd9-2aa5-4260-ab70-ed476cd71df5)
+- <img src='https://github.com/KKSurendran06/FLashPro/assets/137263515/3f9d0dd9-2aa5-4260-ab70-ed476cd71df5' width=200></img>
 
-- (https://github.com/KKSurendran06/FLashPro/assets/137263515/278e4569-1862-4c74-9bba-e0f75bfe91c7)
+- <img src='https://github.com/KKSurendran06/FLashPro/assets/137263515/278e4569-1862-4c74-9bba-e0f75bfe91c7' width=200></img>
 
-- (https://github.com/KKSurendran06/FLashPro/assets/137263515/1b80fb43-ca08-4862-aecc-7a3627250068)
+- <img src='https://github.com/KKSurendran06/FLashPro/assets/137263515/1b80fb43-ca08-4862-aecc-7a3627250068' width=200></img>
 
-- (https://github.com/KKSurendran06/FLashPro/assets/137263515/f672f957-08eb-40fd-94c2-bb970ff77721)
+- <img src='https://github.com/KKSurendran06/FLashPro/assets/137263515/f672f957-08eb-40fd-94c2-bb970ff77721' width=200></img>
+
 
 
